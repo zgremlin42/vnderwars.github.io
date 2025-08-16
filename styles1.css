@@ -1964,6 +1964,14 @@ textarea.w-input, textarea.w-select {
   display: grid;
 }
 
+@font-face {
+  font-family: Proximanova;
+  src: url("https://cdn.prod.website-files.com/689f6d8f9babfbbfcf607bfa/689fb2d51cadc24f95ef52dc_Proxima%20Nova%20Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 .image {
   float: none;
   text-align: left;
@@ -2145,8 +2153,10 @@ textarea.w-input, textarea.w-select {
 
 .text-block-2 {
   color: #fff;
-  margin-right: 15px;
-  font-family: Oswald, sans-serif;
+  letter-spacing: -2px;
+  margin-left: 0;
+  margin-right: 14px;
+  font-family: Proximanova, Impact, sans-serif;
   font-size: 40px;
   font-weight: 700;
   position: relative;
@@ -2165,19 +2175,20 @@ textarea.w-input, textarea.w-select {
 .text-block-3 {
   color: #fff;
   text-align: center;
-  -webkit-text-stroke-width: 2px;
+  letter-spacing: -3px;
+  -webkit-text-stroke-width: 0px;
   -webkit-text-stroke-color: #000;
   text-overflow: ellipsis;
   margin-top: 53px;
   margin-bottom: 96px;
-  font-family: Oswald, sans-serif;
+  font-family: Proximanova, Impact, sans-serif;
   font-size: 50px;
-  font-weight: 700;
-  line-height: 50px;
+  font-weight: 900;
+  line-height: 40px;
 }
 
 .footer-dark {
-  background-color: #f5f7fa;
+  background-color: #0f0f0e;
   border-bottom: 1px solid #e4ebf3;
   padding: 50px 30px 15px;
   position: relative;
@@ -2251,16 +2262,60 @@ textarea.w-input, textarea.w-select {
 }
 
 .footer-copyright-center {
+  color: #fff;
   text-align: center;
+  letter-spacing: -1px;
+  font-family: Proximanova, Impact, sans-serif;
   font-size: 14px;
   line-height: 16px;
 }
 
 .image-3 {
+  max-width: 100%;
   margin-top: 0;
   position: relative;
-  bottom: -13px;
-  left: 388px;
+  top: 5px;
+  bottom: 0;
+  left: 0;
+}
+
+.text-block-4 {
+  letter-spacing: -1px;
+  align-self: flex-start;
+  margin-top: 27px;
+  margin-left: -200px;
+  margin-right: 0;
+  font-family: Proximanova, Impact, sans-serif;
+}
+
+.button {
+  color: #0f0f0e;
+  background-color: #fff;
+  margin-top: 0;
+  font-family: Proximanova, Impact, sans-serif;
+  font-size: 20px;
+  position: relative;
+  bottom: -86px;
+  right: 0;
+}
+
+.button-copy {
+  background-color: #0f0f0e;
+  margin-top: 0;
+  font-family: Proximanova, Impact, sans-serif;
+  position: relative;
+  bottom: -86px;
+  right: -220px;
+}
+
+.text-block-5 {
+  color: #fff;
+  letter-spacing: -1px;
+  font-family: Proximanova, Impact, sans-serif;
+  font-size: 20px;
+  position: relative;
+  top: 57px;
+  right: -325px;
 }
 
 @media screen and (max-width: 991px) {
@@ -2304,6 +2359,10 @@ textarea.w-input, textarea.w-select {
 
   .footer-content {
     grid-column-gap: 60px;
+  }
+
+  .text-block-5 {
+    right: -230px;
   }
 }
 
@@ -2405,6 +2464,15 @@ textarea.w-input, textarea.w-select {
   .footer-divider {
     margin-top: 60px;
   }
+
+  .button {
+    bottom: -20px;
+  }
+
+  .text-block-5 {
+    top: 8px;
+    right: 2px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -2417,20 +2485,31 @@ textarea.w-input, textarea.w-select {
   }
 
   .text-block-2 {
+    overflow-wrap: anywhere;
     margin-right: -17px;
     font-size: 20px;
+    left: -10%;
   }
 
   .text-block-3 {
     text-align: center;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 0px;
     border-right: 0 #000;
     margin-top: 26px;
     margin-bottom: 53px;
-    font-size: 45px;
+    font-size: 40px;
   }
 
   .image-3 {
     left: 0;
+  }
+
+  .button, .button-copy {
+    bottom: -14px;
+  }
+
+  .text-block-5 {
+    top: 7px;
+    right: -1px;
   }
 }
