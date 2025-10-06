@@ -2330,7 +2330,9 @@ textarea.w-input, textarea.w-select {
 }
 
 .section-2 {
-  padding-bottom: 181px;
+  margin-top: 4px;
+  padding-top: 0;
+  padding-bottom: 217px;
 }
 
 .button-3 {
@@ -2365,12 +2367,14 @@ textarea.w-input, textarea.w-select {
 }
 
 .image-4 {
+  z-index: auto;
+  clear: both;
   text-align: center;
   font-family: Proximanova, Impact, sans-serif;
   font-weight: 900;
   position: relative;
-  top: 89px;
-  left: 472px;
+  top: 86px;
+  left: 685px;
   box-shadow: 0 0 10px #000;
 }
 
